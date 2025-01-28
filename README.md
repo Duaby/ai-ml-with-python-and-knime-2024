@@ -1,1 +1,1 @@
-# Artificial Intelligence and Machine Learning with Python and KNIME 2023 Course
+# My Artificial Intelligence and Machine Learning with Python and KNIME Project
