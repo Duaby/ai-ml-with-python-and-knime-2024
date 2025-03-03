@@ -1,8 +1,48 @@
-# My Artificial Intelligence and Machine Learning with Python and KNIME Project
+# Gold Price Forecasting Analysis
 
+## Overview
+This project focuses on analyzing historical gold price data and forecasting future prices using different models. The dataset includes monthly gold prices spanning multiple decades.
 
+## Data Preprocessing
+- The dataset is loaded and the date column is converted into a datetime format.
+- Monthly data is indexed for time series analysis.
+- The dataset is split into training and testing sets for model evaluation.
 
-## Introduction
+## Data Analysis
+- Visualizations of gold prices over time.
+- Boxplot analysis of gold prices by year to identify trends and variations.
+- Summary statistics for yearly, quarterly, and decade-based aggregations.
 
-This Kaggle project provides code for forecasting the price of gold using various time series forecasting methods. The dataset used for the analysis is the daily price of gold in USD from 1950-01 to 2020-07, with a total of 847 data points. The Jupyter notebook included in the repository contains code for building and evaluating three different time series forecasting models, namely Linear Regression Model, Naive Model, and Exponential Smoothing Model. The Exponential Smoothing Model performed the best with a MAPE score of 17.235%. The predicted gold prices for the period 2020-08 to 2025-02 using the Exponential Smoothing Model are also provided in a CSV file named gold_price_predictions.csv. The dataset, code, and results can be accessed through the Kaggle project and Github repository provided in the references.
+## Forecasting Models
+1. **Linear Regression Model:**
+   - Trained using time as the independent variable.
+   - Predictions are made on the test dataset.
+   - Performance is evaluated using Mean Absolute Percentage Error (MAPE).
 
+2. **Naive Forecast Model:**
+   - Uses the last observed value as the forecast for future prices.
+   - Compared against the linear regression model using MAPE.
+
+## 10-Year Forecast
+- A naive forecast is extended for 10 years into the future.
+- Confidence intervals (±5%) are included for uncertainty estimation.
+- Future price predictions are stored in a dataframe.
+
+## Results
+- The naive forecast performed better than the linear regression model based on MAPE.
+- The 10-year forecast predicts stable prices based on the last observed value.
+- Visualizations illustrate historical trends and future expectations.
+
+## Usage
+To replicate this analysis:
+1. Load the dataset.
+2. Ensure dependencies such as `pandas`, `matplotlib`, and `sklearn` are installed.
+3. Run the scripts to perform analysis and forecasting.
+
+## Future Work
+- Implement advanced time-series models like ARIMA, LSTM, or Prophet for improved accuracy.
+- Evaluate external factors influencing gold prices, such as inflation or market indices.
+- Improve confidence interval estimations with statistical techniques.
+
+## Author
+This project was created for gold price trend analysis and forecasting. Contributions and improvements are welcome!
